@@ -1,0 +1,4 @@
+interface:
+  display_name: "LinkedIn Blog Post"
+  short_description: "Turn Molten.Bot blogs into LinkedIn posts"
+  default_prompt: "Use $linkedin-blog-post to turn a Molten.Bot blog article into LinkedIn copy and a first comment."
