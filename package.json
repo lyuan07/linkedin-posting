@@ -1,0 +1,12 @@
+{
+  "name": "linkedin-posting",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate-linkedin-post.mjs",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "vitest": "^4.1.6"
+  }
+}
