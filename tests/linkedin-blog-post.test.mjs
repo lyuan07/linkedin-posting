@@ -5,7 +5,7 @@ import {
   htmlToPlainText,
   parseModelJson,
   validateLinkedInDraft,
-} from '../../scripts/lib/linkedin-blog-post.mjs';
+} from '../scripts/lib/linkedin-blog-post.mjs';
 
 const articleUrl = 'https://molten.bot/blog/test-post/';
 const validDraft = {
