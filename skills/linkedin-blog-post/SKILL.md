@@ -13,7 +13,7 @@ Return exactly:
 {
   "summary": "A factual 2-3 sentence internal summary.",
   "post": "The LinkedIn post without the article URL.",
-  "firstComment": "Read the full post: https://molten.bot/blog/{slug}/"
+  "firstComment": "Link here: https://molten.bot/blog/{slug}/"
 }
 ```
 
@@ -29,7 +29,7 @@ Return exactly:
 4. Write 8-15 short, non-empty lines with generous whitespace. Use minimal bullets only when they sharpen the point.
 5. Use concrete examples and real numbers from the article. Avoid vague claims.
 6. Sound authoritative. Remove hedges such as "might," "could," and "possibly" unless uncertainty is a material fact in the source.
-7. End with a curiosity gap such as "We break down why." or "Link in comments." Do not give away the entire article.
+7. Preserve a curiosity gap without giving away the entire article, then make the final line a short direction to the first comment. Prefer: "Check out the link below."
 
 ## Voice
 
@@ -45,5 +45,5 @@ Before returning, verify that:
 - the first one or two lines work as a hook;
 - every factual claim is supported by the article;
 - the main post contains no URL, emoji, or hashtag;
-- the ending creates curiosity and points readers to the comments;
-- `firstComment` contains the canonical article URL.
+- the ending creates curiosity and the final line directs readers to the link below;
+- `firstComment` starts with `Link here:` and contains the canonical article URL.
