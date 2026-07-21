@@ -40,6 +40,8 @@ export function validateLinkedInDraft(draft, articleUrl) {
   if (lines.length < 8 || lines.length > 15) errors.push(`post must contain 8-15 non-empty lines; found ${lines.length}`);
   if (/https?:\/\/|www\./i.test(draft.post)) errors.push('main post must not contain a URL');
   if (/(^|\s)#[\p{L}\p{N}_]+/u.test(draft.post)) errors.push('main post must not contain hashtags');
+  if (!/check out (?:the )?link below[.!]?$/i.test(lines.at(-1) ?? '')) errors.push('final line must direct readers to check out the link below');
+  if (!/^Link here:\s*/i.test(draft.firstComment)) errors.push('first comment must start with "Link here:"');
   if (!draft.firstComment.includes(articleUrl)) errors.push('first comment must contain the canonical article URL');
   return errors;
 }
